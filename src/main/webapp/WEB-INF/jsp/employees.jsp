@@ -5,9 +5,16 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="css/table.css">-->
     <title>员工列表</title>
-    <style src="/WEB-INF/css/table.css"></style>
 </head>
+<style>
+    table{width:100%;text-align:center;border-collapse:collapse;}
+    thead{color:white;background-color:black;}
+    th,td{border:1px solid black;}
+    .tr0{background-color:grey;}
+</style>
 <body>
 
 <div><table id="list">
@@ -20,7 +27,7 @@
      </tr></thead>
 <tbody>
      <c:forEach items="${list}" var="item" varStatus="status">
-             <tr><td>${item.id}</td>
+             <tr class="tr${item.id%2}"><td>${item.id}</td>
              <td>${item.name}</td>
              <td>${item.age}</td>
              <td>${item.gender}</td></tr>

@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @EnableAutoConfiguration
@@ -16,11 +17,11 @@ public class EmployeeController {
     private EmployeeRepository employeeRepository;
 
     @RequestMapping("/employees")
-    String getEmployees(Model model) {
+    ModelAndView getEmployees(Model model) {
 
-        model.addAttribute("message", "hello world");
-
-        return "employees";
+        ModelAndView mav = new ModelAndView("employees");
+        mav.addObject("list", employeeRepository.getAllEmployees());
+        return mav;
     }
 
 

@@ -5,8 +5,8 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!--<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>-->
-    <!--<link rel="stylesheet" type="text/css" href="css/table.css">-->
+    <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/table.css">
     <title>员工列表</title>
 </head>
 <style>

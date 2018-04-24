@@ -10,10 +10,10 @@
     <title>员工列表</title>
 </head>
 <style>
-    table{width:100%;text-align:center;border-collapse:collapse;}
+    table{width:100%;height:50px;line-height:50px;text-align:center;border-collapse:collapse;}
     thead{color:white;background-color:black;}
     th,td{border:1px solid black;}
-    .tr0{background-color:grey;}
+    .tr0{background-color:#ebebeb;}
 </style>
 <body>
 
